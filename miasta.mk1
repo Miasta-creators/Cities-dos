@@ -1,0 +1,16 @@
+!define BLANK ""
+D:\miasta-gra\dos\github\main.obj : D:\miasta-gra\dos\github\main.cpp .AUTOD&
+EPEND
+ @D:
+ cd D:\miasta-gra\dos\github
+ *wpp main.cpp -i="D:\apps_other\WATCOM/h" -w4 -e25 -zq -od -d2 -bt=dos -fo=&
+.obj -ml -xs -xr
+
+D:\miasta-gra\dos\github\miasta.exe : D:\miasta-gra\dos\github\main.obj .AUT&
+ODEPEND
+ @D:
+ cd D:\miasta-gra\dos\github
+ @%write miasta.lk1 FIL main.obj
+ @%append miasta.lk1 
+ *wlink name miasta d all sys dos op m op maxe=25 op q op symf @miasta.lk1
+

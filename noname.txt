@@ -1,0 +1,5 @@
+cd D:\miasta-gra\dos\try2
+wmake -f D:\miasta-gra\dos\try2\noname.mk -h -e
+wpp main.cpp -i="D:\apps_other\WATCOM/h" -w4 -e25 -zq -od -d2 -bt=dos -fo=.obj -ml -xs -xr
+wlink name miasta d all sys dos op m op maxe=25 op q op symf @miasta.lk1
+Execution complete
