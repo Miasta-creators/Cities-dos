@@ -1,10 +1,10 @@
 !define BLANK ""
-D:\miasta-gra\dos\github\main.obj : D:\miasta-gra\dos\github\main.cpp .AUTOD&
-EPEND
+D:\miasta-gra\dos\github\main.obj : D:\miasta-gra\dos\github\src\main.cpp .A&
+UTODEPEND
  @D:
  cd D:\miasta-gra\dos\github
- *wpp main.cpp -i="D:\apps_other\WATCOM/h" -w4 -e25 -zq -od -d2 -bt=dos -fo=&
-.obj -ml -xs -xr
+ *wpp src\main.cpp -i="D:\apps_other\WATCOM/h" -w4 -e25 -zq -od -d2 -bt=dos &
+-fo=.obj -ml -xs -xr
 
 D:\miasta-gra\dos\github\miasta.exe : D:\miasta-gra\dos\github\main.obj .AUT&
 ODEPEND
