@@ -71,15 +71,8 @@ int main() {
     draw_menu1();
     draw_menu2();
     int c=0;
-    /*for(int y=0; y<32; y+=2){
-        for(int x=0; x<32; x+=2){
-            pixel(x,y,c);
-            pixel(x,y+1,c);
-            pixel(x+1,y,c);
-            pixel(x+1,y+1,c);
-            c++;
-        }
-    }*/
+
+
     getc(stdin);
     clear(0x00);
     set_mode(TEXT_MODE);
